@@ -62,9 +62,9 @@ outputs:
 runs:
   using: 'composite'
   steps:
-    - uses: actions/attest-build-provenance/predicate@1176ef556905f349f669722abf30bce1a6e16e01 # predicate@1.1.5
+    - uses: ContentSquare/actions-attest-build-provenance/predicate@approved-1176ef556905f349f669722abf30bce1a6e16e01 # predicate@1.1.5
       id: generate-build-provenance-predicate
-    - uses: actions/attest@daf44fb950173508f38bd2406030372c1d1162b1 # v3.0.0
+    - uses: ContentSquare/actions-attest@approved-daf44fb950173508f38bd2406030372c1d1162b1 # v3.0.0
       id: attest
       env:
         NODE_OPTIONS: "--max-http-header-size=32768"
